@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Phudu', cursive;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #242835, #2a3264);
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-inicio a {
+    color: #fff;
+}
+
+.list-links {
+    display: flex;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.list-item {
+    margin-left: 1rem;
+}
+
+.list-links > li > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.list-links > li > a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-item {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+/* main */
+
+section.apresentacao {
+    padding-top: 40px;
+}
+
+
+section.apresentacao .inicio {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
+
+.text-apresentacao {
+    text-align: center;
+}
+
+div.imagem {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+div.imagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+section.apresentacao .inicio p {
+    padding: 10px;
+}
