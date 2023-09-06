@@ -8,33 +8,30 @@
 </head>
 <body>
     <header>
-        <h1 class="text-inicio">Portfólio</h1>
-        <nav>
-            <ul class="list-links">
-                <li class="list-item"><a href="#inicio">Início</a></li>
-                <li class="list-item"><a href="#">Contatos</a></li>
-                <li class="list-item"><a href="#">Projetos</a></li>
-                <li class="list-item"><a href="#">Sobre me</a></li>
+        <h1 id="text-portfolio">Portfólio</h1>
+        <nav id="nav">
+            <button id="btn-mobile">
+                Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="#sobre" class="item">Início</a></li>
+                <li><a href="#" class="item">Sobre Me</a></li>
+                <li><a href="#" class="item">Projetos</a></li>
+                <li><a href="#" class="item">Contato</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="apresentacao">
-            <div class="inicio">
-                <div class="text-apresentacao">
-                    <p>Olá, meu nome é <strong>Francisco José</strong>, estou aprendendo a programar.</p>
-                    <p>Tenho muita vontade de aprender e evoluir.</p>
-                </div>
-                <div class="imagem">
-                    <img src="imagens/WIN_20230905_18_37_14_Pro1.jpg" alt="Francisco">
-                </div>
-            </div>
-        </section>
-        <section class="contatos">
-            <div>
-                <div class="linkedin"></div>
+        <section id="sobre">
+            <p class="text-sebre">Olá, Bem-vindo ao meu portfólio, meu nome é <strong>Francisco</strong> sou desenvolvedor web.</p>
+            <div class="imagem">
+                <img src="imagens/WIN_20230905_18_37_14_Pro1.jpg" class="imagem-pf">
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
