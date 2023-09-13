@@ -14,7 +14,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0.5rem;
+    padding: 0 0.8rem;
     color: #fff;
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@ body {
     padding-top: 120px;
 }
 
-header h1 span {
+header h1 {
     color: rgb(244, 89, 89);
 }
 
@@ -54,7 +54,10 @@ header h1 span {
 
 @media (max-width: 650px) {
     header {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     header h1 {
@@ -63,36 +66,97 @@ header h1 span {
     }
 }
 
+/* HEADER CABEÇALHO ^^^^ */
+
 main {
     padding: 8px;
+    height: 1000px;
 }
 
-main > h1 {
-    text-align: center;
-    padding: 2rem 0;
-}
 
-section.secao-projetos{
-    max-width: 1000px;
+
+section.inicial {
+    max-width: 920px;
     margin: auto;
+    height: 90vh;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-div.projetos {
-    max-width: 350px;
+section.inicial .text-inicio {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+section.inicial .text-inicio p {
+    padding: 10px;
+}
+
+section.inicial .imagem {
+    width: 350px;
     height: 350px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
 }
 
-div.projetos .item {
+section.inicial .imagem img {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 50%;
+}
+
+/* Text animation */
+.text-front-animation {
+    animation: anime 2s linear infinite;
+}
+
+@keyframes anime {
+    25% {
+        color: orange;
+    }
+    75% {
+        color: rgb(255, 128, 0);
+    }
+    50% {
+        color: rgb(250, 146, 11);
+    }
+    100% {
+        color: rgb(255, 242, 0);
+    }
+}
+/* SECTION PÁGINA INÍCIAL */
+
+.titulo-projetos {
     text-align: center;
+    padding: 2.4rem 0;
+}
+
+.secao-projetos {
+    padding: 8px;
+    border-top: 1px solid black;
+}
+
+section.projetos {
+    max-width: 920px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+section.projetos .item {
+    width: 300px;
+    height: 300px;
+    margin: 5px auto 5px auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.286);
+    transition: all .55s ease;
+}
+
+section.projetos .item:hover {
+    opacity: 0.9;
+    background-color: #33333313;
+    cursor: pointer;
 }
