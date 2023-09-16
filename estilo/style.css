@@ -32,6 +32,20 @@ body {
     transition: .2s;
 }
 
+h2.titulos {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulos span {
+    color: #22a326;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #14eb1bbe;
+    transform: scale(1.05);
+}
 
 /* ESTILO DO CABEÇALHO */
 header {
@@ -67,11 +81,6 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     padding: 0 40px;
-}
-
-.btn-contato button:hover {
-    box-shadow: 0px 0px 8px #14eb1bbe;
-    transform: scale(1.05);
 }
 
 
@@ -117,4 +126,124 @@ section.topo-do-site .flex{
     100% {
         top: 30px;
     }
+}
+
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+section.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 40px;
+    transition: .2s;
+}
+
+section.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff92;
+}
+
+section.especialidades .especialidades-box i {
+    font-size: 60px;
+    color: #22a326;
+}
+
+section.especialidades .especialidades-box h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+section.sobre .img-sobre img {
+    max-width: 350px;
+    height: 400px;
+}
+
+section.sobre .txt-sobre {
+    color: #fff;
+}
+
+section.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+section.sobre .txt-sobre h2 span {
+    color: #22a326;
+    display: block;
+}
+section.sobre .txt-sobre p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+section.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #22a326;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO */ 
+section.portfolio {
+   padding: 80px 4%;
+   box-shadow: 0px 0px 40px 10px #ffffff19;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #22a326;
+    position: relative;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1054122e;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
 }
