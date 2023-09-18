@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <header>
+    <header id="inicio">
         <div class="face">
             <div class="logo">
                 <a href="#">Logo</a>
@@ -17,18 +17,42 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i> 
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
         </div><!--face-->
     </header>
 
@@ -43,7 +67,7 @@
 
                         <div class="btn-contato">
                             <a href="#">
-                                <button>Entre me contato</button>
+                                <button>Entre em contato</button>
                             </a>
                         </div>
                     </div><!--txt-topo-site-->
@@ -56,7 +80,7 @@
         </section><!--topo-do-site-->
 
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="face">
                 <h2 class="titulos">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -83,7 +107,7 @@
             </div><!--face-->
         </section><!--especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="face">
                 <div class="flex">
                     <div class="img-sobre">
@@ -110,7 +134,7 @@
             </div><!--face-->
         </section><!--sobre-->
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="face">
                 <h2 class="titulos">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -126,8 +150,53 @@
                 </div><!--flex-->
             </div><!--face-->
         </section><!--portfolio-->
+
+        <section class="formulario" id="contato">
+            <div class="face">
+                <h2 class="titulos">FALA <span>COMIGO.</span></h2>
+
+                <form action="">
+                    <input type="text" placeholder="Seu nome completo:" required>
+                    <input type="text" placeholder="Seu e-mail:" required>
+                    <input type="text" placeholder="Seu celular:">
+                    <textarea name="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </div><!--face-->
+        </section><!--formulario-->
+
     </main>
 
-    <!--5/8-->
+    <footer>
+        <div class="face">
+            <div class="line-footer borda">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <h1>LOGO</h1>
+                    </div>
+                    <div class="btn-social">
+                            <a href="#">
+                                <button><i class="bi bi-instagram"></i></button>
+                            </a>
+                            <a href="#">
+                                <button><i class="bi bi-youtube"></i></button>
+                            </a>
+                            <a href="#">
+                                <button><i class="bi bi-linkedin"></i></button>
+                            </a>
+                    </div><!--btn-social-->
+            </div><!--flex-->
+        </div><!--line-footer-->
+
+
+            <div class="line-footer">
+                <p><i class="bi bi-envelope"></i> <a href="mailto:franciscojoseteles2023@gmail.com">franciscojoseteles2023@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--face-->
+    </footer>
+
+  <script src="scripts/menu.js"></script>
 </body>
 </html>
