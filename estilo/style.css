@@ -1,15 +1,36 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Pacifico&family=Phudu:wght@300;400&family=Ubuntu:ital,wght@0,400;1,300&family=Ysabeau+SC:wght@400;500&display=swap');
+
+
 /* ESTILO GERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* VARIÁVEIS DE COR */
+
+:root {
+    --cor6: rgb(5, 32, 72);
+    --cor7: rgb(6, 45, 104);
+    --cor8: rgb(11, 77, 190);
+    --cor9: rgb(10, 135, 133);
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
+    background-color: var(--cor6);
     height: 100vh;
+}
+
+section {
+    min-height: 100vh;
 }
 
 .face {
@@ -25,11 +46,12 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #22a326;
+    background-color: var(--cor8);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+    color: #fff;
 }
 
 h2.titulos {
@@ -39,11 +61,11 @@ h2.titulos {
 }
 
 h2.titulos span {
-    color: #22a326;
+    color: var(--cor9);
 }
 
 button:hover, form .btn-enviar input[type=submit]:hover {
-    box-shadow: 0px 0px 8px #14eb1bbe;
+    box-shadow: 0px 0px 8px #57b1e4be;
     transform: scale(1.05);
 }
 
@@ -59,6 +81,7 @@ header > .face {
 }
 
 header a {
+    font-size: 1.2rem;
     color: #8e8c8c;
     text-decoration: none;
     display: inline-block;
@@ -70,8 +93,9 @@ header a:hover {
     transform: scale(1.05);
 }
 
-.logo {
-    font-size: 1.5rem;
+.logo a i {
+    font-size: 2.5rem;
+    color: #fff;
 }
 
 header nav ul {
@@ -85,12 +109,12 @@ header nav.menu-desktop ul li {
 
 /* ESTILO DO MENU MOBILE */
 .btn-abrir-menu i {
-    color: #22a326;
+    color: #fff;
     font-size: 40px;
 }
 
 .menu-mobile {
-    background-color: #000;
+    background-color: var(--cor6);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -114,7 +138,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i {
-    color: #22a326;
+    color: #fff;
     font-size: 30px;
 }
 
@@ -133,7 +157,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a:hover {
-    background-color: #22a326;
+    background-color: var(--cor8);
 }
 
 .overlay-menu {
@@ -165,7 +189,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #22a326;
+    color: var(--cor9);
 }
 
 .topo-do-site .txt-topo-site p {
@@ -179,7 +203,7 @@ section.topo-do-site .flex{
     border-radius: 50%;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    box-shadow: 0px 0px 40px #fff;
+    box-shadow: 0px 0px 40px #113d96;
 }
 
 @keyframes flutuar {
@@ -195,6 +219,7 @@ section.topo-do-site .flex{
 /* ESTILO DAS ESPECIALIDADES */
 section.especialidades {
     padding: 40px 4%;
+    background-color: var(--cor7);
 }
 
 section.especialidades .flex {
@@ -207,6 +232,7 @@ section.especialidades .especialidades-box {
     border-radius: 15px;
     margin-top: 40px;
     transition: .2s;
+    background-color: var(--cor8);
 }
 
 section.especialidades .especialidades-box:hover {
@@ -216,7 +242,7 @@ section.especialidades .especialidades-box:hover {
 
 section.especialidades .especialidades-box i {
     font-size: 60px;
-    color: #22a326;
+    color: #fff;
 }
 
 section.especialidades .especialidades-box h3 {
@@ -227,6 +253,7 @@ section.especialidades .especialidades-box h3 {
 /* ESTILO DO SOBRE */
 section.sobre {
     padding: 80px 4%;
+    background-color: var(--cor)--cor6;
 }
 
 section.sobre .flex {
@@ -250,12 +277,13 @@ section.sobre .txt-sobre h2 {
 }
 
 section.sobre .txt-sobre h2 span {
-    color: #22a326;
+    color: var(--cor9);
     display: block;
 }
 section.sobre .txt-sobre p {
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: justify;
+    font-size: 1.3rem;
 }
 
 .btn-social button {
@@ -263,7 +291,8 @@ section.sobre .txt-sobre p {
     height: 60px;
     border-radius: 50%;
     border: 0;
-    background-color: #22a326;
+    background-color: var(--cor8);
+    color: #fff;
     font-size: 20px;
     cursor: pointer;
     margin: 0 10px;
@@ -284,7 +313,7 @@ section.portfolio .flex {
 .img-port {
     width: 360px;
     height: 460px;
-    background-color: #22a326;
+    background-color: rgb(27, 44, 128);
     position: relative;
     border-radius: 20px;
 }
@@ -348,9 +377,9 @@ form .btn-enviar {
 }
 
 form .btn-enviar input[type=submit] {
-    background-color: #22a326;
-    width: 120px;
-    color: #000;
+    background-color: var(--cor8);
+    width: 150px;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
@@ -373,11 +402,11 @@ footer .line-footer {
 }
 
 .borda {
-    border-bottom: 2px solid #22a326;
+    border-bottom: 2px solid var(--cor8);
 }
 
 footer .line-footer p i {
-    color: #22a326;
+    color: #fff;
     font-size: 22px;
 }
 
@@ -388,6 +417,10 @@ footer .line-footer p a {
 
 footer .line-footer p a:hover {
     text-decoration: underline;
+}
+
+.bi-list {
+    display: none;
 }
 
 @media screen and (max-width: 1030px) {
@@ -401,8 +434,11 @@ footer .line-footer p a:hover {
         font-size: 28px;
         line-height: 30px;
     }
-    
 
+    .bi-list {
+        display: block;
+    }
+    
     .topo-do-site .flex {
         flex-direction: column-reverse;
     }
