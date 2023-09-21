@@ -318,13 +318,18 @@ section.portfolio .flex {
     border-radius: 20px;
 }
 
+.jogo-da-memoria img{
+    width: 100%;
+    height: 100%;
+}
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1054122e;
+    background-color: #10495470;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -334,6 +339,16 @@ section.portfolio .flex {
     color: #fff;
     opacity: 0;
     transition: .5s;
+}
+
+.overlay a {
+    color: #fff;
+}
+
+.overlay i {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 2em;
 }
 
 .overlay:hover {
